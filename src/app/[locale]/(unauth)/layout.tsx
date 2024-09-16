@@ -2,44 +2,32 @@ import Link from 'next/link';
 // import { useTranslations } from 'next-intl';
 import { unstable_setRequestLocale } from 'next-intl/server';
 
+import { PageHamburgerMenu } from '@/components/PageHamburgerMenu';
+
 function PageHeader() {
   return (
-    <nav className="bg-white shadow">
-      <div className="container mx-auto flex items-center justify-between p-4">
-        {/* Logo */}
-        <div className="text-2xl font-bold text-red-500">Pantip</div>
-
-        {/* Search bar */}
-        <div className="flex w-1/3 items-center rounded-full bg-gray-100 p-2">
-          <input className="grow bg-transparent px-2 focus:outline-none" type="text" placeholder="ค้นหาบน Pantip" />
-          <button className="rounded-full bg-red-500 px-4 py-2 text-white">Search</button>
+    <header className="bg-white py-4 shadow-md">
+      <div className="container mx-auto flex items-center justify-between px-4">
+        {/* Left Logo */}
+        <div className="text-xl font-bold text-gray-800">
+          <a href="/">Pantip</a>
         </div>
 
-        {/* Profile and Menu */}
-        <div className="flex items-center space-x-4">
-          <Link
-            href="/"
-            className="text-gray-700"
-          >
-            ตั้งกระทู้
-          </Link>
-          <Link
-            href="/"
-            className="text-gray-700"
-          >
-            คอมมูนิตี้
-          </Link>
-          <div className="flex items-center space-x-2">
-            <Link
-              href="/"
-              className="text-gray-700"
-            >
-              เข้าสู่ระบบ / สมัครสมาชิก
-            </Link>
-          </div>
+        {/* Center Search Bar (hidden on mobile, shown on medium and above) */}
+        <div className="hidden max-w-lg grow items-center space-x-4 rounded-full bg-gray-100 px-4 py-2 shadow-sm md:flex">
+          <input
+            type="text"
+            placeholder="ค้นหาบน Pantip"
+            className="flex-1 bg-transparent text-gray-700 outline-none placeholder:text-gray-500"
+          />
+          <button className="rounded-full bg-red-500 p-2 text-white">
+            Search
+          </button>
         </div>
+
+        <PageHamburgerMenu />
       </div>
-    </nav>
+    </header>
   );
 }
 
