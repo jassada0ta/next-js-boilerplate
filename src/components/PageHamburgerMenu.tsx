@@ -32,7 +32,7 @@ export function PageHamburgerMenu() {
       </button>
 
       {/* Dropdown Menu */}
-      <div id="menu" className={`absolute right-0 mt-2 w-48 rounded-lg bg-white py-2 shadow-lg ${isOpen ? '' : 'hidden'}`}>
+      <div id="menu" style={{ zIndex: 10000 }} className={`absolute right-0 mt-2 w-48 rounded-lg bg-white py-2 shadow-lg ${isOpen ? '' : 'hidden'}`}>
         <a href="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Log In</a>
         <a href="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Sign Up</a>
         <hr />
