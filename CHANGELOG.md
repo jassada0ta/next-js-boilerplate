@@ -1,3 +1,19 @@
+# 1.0.0 (2024-09-17)
+
+
+### Bug Fixes
+
+* fix overlapping with Carousel ([5bca437](https://github.com/jassada0ta/next-js-boilerplate/commit/5bca437affeb8b8e90b4cc5bda86c33f38699998))
+
+
+### Features
+
+* add carousel ([630ce6b](https://github.com/jassada0ta/next-js-boilerplate/commit/630ce6b3e7f3d201aaf7b007ed2b899ee85f12de))
+* add hamburger header menu ([2423363](https://github.com/jassada0ta/next-js-boilerplate/commit/24233637b8286f8d1c91ea7cd9d2b25e9829a809))
+* add pantip home component ([d6c457b](https://github.com/jassada0ta/next-js-boilerplate/commit/d6c457b2b36b699aa8e39d851384139ceb4afb4b))
+* change layout to airbnb ([e2dc96a](https://github.com/jassada0ta/next-js-boilerplate/commit/e2dc96a26e994d1b5e771eaed139fd1dfebf08a2))
+* change page name ([207290b](https://github.com/jassada0ta/next-js-boilerplate/commit/207290ba743324367a302a75630a616ecd7fe59a))
+
 # [3.58.0](https://github.com/ixartz/Next-js-Boilerplate/compare/v3.57.0...v3.58.0) (2024-09-15)
 
 
